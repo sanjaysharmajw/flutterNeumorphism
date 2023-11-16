@@ -128,7 +128,7 @@ class MyApp extends StatelessWidget {
   }
 }
 ```
-<img src="https://github.com/sanjaysharmajw/flutterNeumorphism/blob/a12cd67839d4d3d76b4e545339d2803fbf25cb91/Screenshot_1700136901.png" alt="How example looks">
+<img src="https://github.com/sanjaysharmajw/flutterNeumorphism/blob/a12cd67839d4d3d76b4e545339d2803fbf25cb91/Screenshot_1700136901.png" alt="How example looks" width="250" height="540">
 
 
 </td>
