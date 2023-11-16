@@ -8,7 +8,7 @@ Flutter Neumorphisms UI/UX
 1. Add the latest version of package to your pubspec.yaml (and run`dart pub get`):
 ```yaml
 dependencies:
-  flutter_neumorphism_ui: ^0.0.5
+  flutter_neumorphism_ui: ^0.0.6
 ```
 1. Import the package and use it in your Flutter App.
 ```dart
