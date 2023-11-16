@@ -1,7 +1,7 @@
 
-# Fancy Containers
+# Flutter Neumorphisms
 
-Money converter
+Flutter Neumorphisms UI/UX
 
 ## Installation
 
