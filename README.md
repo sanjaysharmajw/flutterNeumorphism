@@ -8,9 +8,9 @@ Flutter Neumorphisms UI/UX
 1. Add the latest version of package to your pubspec.yaml (and run`dart pub get`):
 ```yaml
 dependencies:
-  flutter_neumorphism_ui: ^0.0.2
+  flutter_neumorphism_ui: ^0.0.4
 ```
-2. Import the package and use it in your Flutter App.
+1. Import the package and use it in your Flutter App.
 ```dart
 import 'package:flutter_neumorphism_ui/flutter_neumorphism_ui_base.dart';
 ```
@@ -20,7 +20,7 @@ import 'package:flutter_neumorphism_ui/flutter_neumorphism_ui_base.dart';
 <td>
 
 ```dart
-child: FlutterNeumorphisms(
+FlutterNeumorphisms(
 onTap: () {},
 borderRadius: 12,
 bottomRightShadowBlurRadius: 15,
@@ -39,6 +39,96 @@ topLeftOffset: const Offset(-4, -4),
 child: const Center(child: Text("Hello World")),
 )
 ```
+
+## Example
+```dart
+
+import 'package:flutter/material.dart';
+import 'package:flutter_neumorphism_ui/flutter_neumorphism_ui_base.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+      ),
+      home: Scaffold(
+        backgroundColor: Colors.grey.shade300,
+        body: Center(
+            child: SingleChildScrollView(
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Column(
+                  children: [
+                    FlutterNeumorphisms(
+                      onTap: () {},
+                      borderRadius: 12,
+                      bottomRightShadowBlurRadius: 15,
+                      bottomRightShadowSpreadRadius: 1,
+                      borderWidth: 5,
+                      backgroundColor: Colors.grey.shade300,
+                      topLeftShadowBlurRadius: 15,
+                      topLeftShadowSpreadRadius: 1,
+                      topLeftShadowColor: Colors.white,
+                      bottomRightShadowColor: Colors.grey.shade500,
+                      height: 100,
+                      width: size.width,
+                      bottomRightOffset: const Offset(4, 4),
+                      topLeftOffset: const Offset(-4, -4),
+                      child: const Row(
+                        children: [
+                          Icon(Icons.no_food),
+                          SizedBox(width: 20),
+                          Text("Food",style: TextStyle(fontSize: 20),)
+                        ],
+                      ),
+                    ),
+                    FlutterNeumorphisms(
+                      onTap: () {},
+                      borderRadius: 12,
+                      bottomRightShadowBlurRadius: 15,
+                      bottomRightShadowSpreadRadius: 1,
+                      borderWidth: 5,
+                      backgroundColor: Colors.grey.shade300,
+                      topLeftShadowBlurRadius: 15,
+                      topLeftShadowSpreadRadius: 1,
+                      topLeftShadowColor: Colors.white,
+                      bottomRightShadowColor: Colors.grey.shade500,
+                      height: 100,
+                      width: size.width,
+                      bottomRightOffset: const Offset(4, 4),
+                      topLeftOffset: const Offset(-4, -4),
+                      child: const Row(
+                        children: [
+                          Icon(Icons.no_food),
+                          SizedBox(width: 20),
+                          Text("Food",style: TextStyle(fontSize: 20),)
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            )
+
+        ),
+      )
+    );
+  }
+}
+```
+<img src="https://user-images.githubusercontent.com/42082172/82893565-d3643480-9f6e-11ea-96a7-493181df6214.gif" alt="How example looks" width="300" height="540">
 
 
 </td>
