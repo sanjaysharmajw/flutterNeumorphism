@@ -8,7 +8,7 @@ Flutter Neumorphisms UI/UX
 1. Add the latest version of package to your pubspec.yaml (and run`dart pub get`):
 ```yaml
 dependencies:
-  flutter_neumorphism_ui: ^0.0.4
+  flutter_neumorphism_ui: ^0.0.5
 ```
 1. Import the package and use it in your Flutter App.
 ```dart
@@ -128,7 +128,7 @@ class MyApp extends StatelessWidget {
   }
 }
 ```
-<img src="https://user-images.githubusercontent.com/42082172/82893565-d3643480-9f6e-11ea-96a7-493181df6214.gif" alt="How example looks" width="300" height="540">
+<img src="https://github.com/sanjaysharmajw/flutterNeumorphism/blob/a12cd67839d4d3d76b4e545339d2803fbf25cb91/Screenshot_1700136901.png" alt="How example looks" width="300" height="540">
 
 
 </td>
