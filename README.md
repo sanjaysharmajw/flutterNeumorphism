@@ -1,137 +1,65 @@
-
 # Flutter Neumorphisms
+- ![Pub Publisher](https://img.shields.io/pub/publisher/flutter_neumorphism_ui)
+- ![Pub Points](https://img.shields.io/pub/points/flutter_neumorphism_ui)
+- ![Pub Popularity](https://img.shields.io/pub/popularity/flutter_neumorphism_ui)
+- ![Pub Version](https://img.shields.io/pub/v/flutter_neumorphism_ui)
+- ![Pub Likes](https://img.shields.io/pub/likes/flutter_neumorphism_ui)
 
-Flutter Neumorphisms UI/UX
+##### The given code is a Flutter widget implementing a neumorphic design effect. Here's a brief explanation:
 
-## Installation
+**`FlutterNeumorphisms`**: A custom widget designed for neumorphism, providing a soft, embossed or debossed effect using shadows.
 
-1. Add the latest version of package to your pubspec.yaml (and run`dart pub get`):
-```yaml
-dependencies:
-  flutter_neumorphism_ui: ^0.0.6
-```
-1. Import the package and use it in your Flutter App.
-```dart
-import 'package:flutter_neumorphism_ui/flutter_neumorphism_ui_base.dart';
-```
+**Customization**:
+- **Shadows**:
+    - `topLeftShadowColor`, `bottomRightShadowColor`: Define the colors for light and dark shadows, creating the illusion of depth.
+    - `topLeftShadowBlurRadius`, `bottomRightShadowBlurRadius`: Control the softness of shadows.
+    - `topLeftShadowSpreadRadius`, `bottomRightShadowSpreadRadius`: Define how far the shadows spread.
+    - `topLeftOffset`, `bottomRightOffset`: Specify the shadow directions.
+- **`backgroundColor`**: The background color of the widget.
+- **`borderRadius`**: The widget's rounded corner radius.
+- **`borderWidth`**: The thickness of the border around the widget.
 
-<table>
-<tr>
-<td>
+**Dimensions**:
+- `height` and `width`: Define the size of the neumorphic container.
+
+4. **`onTap`**: A callback function triggered when the widget is tapped.
+
+5. **Child Content**:
+    - A **`Row`** layout is used, containing:
+        - An **icon** (`Icons.opacity_rounded`).
+        - A **spacer** (`SizedBox`) for spacing.
+        - A **`Column`** with two text widgets displaying "Drop" and "Neu morphism."
+
+This widget combines visual appeal with functionality by enabling a neumorphic design and supporting tap interactions.
 
 ```dart
 FlutterNeumorphisms(
-onTap: () {},
-borderRadius: 12,
-bottomRightShadowBlurRadius: 15,
-bottomRightShadowSpreadRadius: 1,
-borderWidth: 5,
-backgroundColor: Colors.grey.shade300,
-topLeftShadowBlurRadius: 15,
-topLeftShadowSpreadRadius: 1,
-topLeftShadowColor: Colors.white,
-bottomRightShadowColor: Colors.grey.shade500,
-height: size.width * 0.5,
-width: size.width * 0.5,
-padding: const EdgeInsets.all(50),
-bottomRightOffset: const Offset(4, 4),
-topLeftOffset: const Offset(-4, -4),
-child: const Center(child: Text("Hello World")),
-)
-```
-
-## Example
-```dart
-
-import 'package:flutter/material.dart';
-import 'package:flutter_neumorphism_ui/flutter_neumorphism_ui_base.dart';
-
-void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+      onTap: () {},
+      borderRadius: 12,
+      bottomRightShadowBlurRadius: 15,
+      bottomRightShadowSpreadRadius: 1,
+      borderWidth: 5,
+      backgroundColor: Colors.grey.shade300,
+      topLeftShadowBlurRadius: 15,
+      topLeftShadowSpreadRadius: 1,
+      topLeftShadowColor: Colors.white,
+      bottomRightShadowColor: Colors.grey.shade500,
+      height: 100,
+      width: width,
+      bottomRightOffset: const Offset(4, 4),
+      topLeftOffset: const Offset(-4, -4),
+      child:  const Row(
+        children: [
+          Icon(Icons.opacity_rounded,size: 30),
+          SizedBox(width: 20),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text("Drop",style: TextStyle(fontSize: 20)),
+              Text("Neu morphism",style: TextStyle(fontSize: 18),),
+            ],
+          )
+        ],
       ),
-      home: Scaffold(
-        backgroundColor: Colors.grey.shade300,
-        body: Center(
-            child: SingleChildScrollView(
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Column(
-                  children: [
-                    FlutterNeumorphisms(
-                      onTap: () {},
-                      borderRadius: 12,
-                      bottomRightShadowBlurRadius: 15,
-                      bottomRightShadowSpreadRadius: 1,
-                      borderWidth: 5,
-                      backgroundColor: Colors.grey.shade300,
-                      topLeftShadowBlurRadius: 15,
-                      topLeftShadowSpreadRadius: 1,
-                      topLeftShadowColor: Colors.white,
-                      bottomRightShadowColor: Colors.grey.shade500,
-                      height: 100,
-                      width: size.width,
-                      bottomRightOffset: const Offset(4, 4),
-                      topLeftOffset: const Offset(-4, -4),
-                      child: const Row(
-                        children: [
-                          Icon(Icons.no_food),
-                          SizedBox(width: 20),
-                          Text("Food",style: TextStyle(fontSize: 20),)
-                        ],
-                      ),
-                    ),
-                    FlutterNeumorphisms(
-                      onTap: () {},
-                      borderRadius: 12,
-                      bottomRightShadowBlurRadius: 15,
-                      bottomRightShadowSpreadRadius: 1,
-                      borderWidth: 5,
-                      backgroundColor: Colors.grey.shade300,
-                      topLeftShadowBlurRadius: 15,
-                      topLeftShadowSpreadRadius: 1,
-                      topLeftShadowColor: Colors.white,
-                      bottomRightShadowColor: Colors.grey.shade500,
-                      height: 100,
-                      width: size.width,
-                      bottomRightOffset: const Offset(4, 4),
-                      topLeftOffset: const Offset(-4, -4),
-                      child: const Row(
-                        children: [
-                          Icon(Icons.no_food),
-                          SizedBox(width: 20),
-                          Text("Food",style: TextStyle(fontSize: 20),)
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            )
-
-        ),
-      )
     );
-  }
-}
 ```
-<img src="https://github.com/sanjaysharmajw/flutterNeumorphism/blob/main/Screenshot_1700136901.png?raw=true" alt="How example looks" width="250" height="540">
-<img src="https://github.com/sanjaysharmajw/flutterNeumorphism/blob/main/Screenshot_1700138627.png?raw=true" alt="How example looks" width="250" height="540">
-
-
-</td>
-</tr>
-</table>

@@ -3,25 +3,25 @@ import 'package:flutter/material.dart';
 class FlutterNeumorphisms extends StatefulWidget {
   const FlutterNeumorphisms(
       {Key? key,
-        required this.width,
-        required this.height,
-        required this.child,
-        this.padding,
-        this.margin,
-        required this.backgroundColor,
-        this.borderRadius,
-        this.boxShape,
-        required this.bottomRightShadowColor,
-        required this.topLeftShadowColor,
-        this.bottomRightShadowBlurRadius,
-        this.bottomRightShadowSpreadRadius,
-        this.topLeftShadowBlurRadius,
-        this.topLeftShadowSpreadRadius,
-        required this.onTap,
-        this.borderWidth,
-        this.borderColor,
-        this.topLeftOffset,
-        this.bottomRightOffset})
+      required this.width,
+      required this.height,
+      required this.child,
+      this.padding,
+      this.margin,
+      required this.backgroundColor,
+      this.borderRadius,
+      this.boxShape,
+      required this.bottomRightShadowColor,
+      required this.topLeftShadowColor,
+      this.bottomRightShadowBlurRadius,
+      this.bottomRightShadowSpreadRadius,
+      this.topLeftShadowBlurRadius,
+      this.topLeftShadowSpreadRadius,
+      required this.onTap,
+      this.borderWidth,
+      this.borderColor,
+      this.topLeftOffset,
+      this.bottomRightOffset})
       : super(key: key);
   final Widget child;
   final double width;
@@ -59,7 +59,7 @@ class _FlutterNeumorphismsState extends State<FlutterNeumorphisms> {
         decoration: BoxDecoration(
             color: widget.backgroundColor, //containerColor
             borderRadius:
-            BorderRadius.circular(widget.borderRadius ?? 10), //borderRadius
+                BorderRadius.circular(widget.borderRadius ?? 10), //borderRadius
             shape: widget.boxShape ?? BoxShape.rectangle, //borderShape
             border: Border.all(
               width: widget.borderWidth ?? 0, //borderWidth
