@@ -22,15 +22,18 @@ class Items extends StatelessWidget {
       width: width,
       bottomRightOffset: const Offset(4, 4),
       topLeftOffset: const Offset(-4, -4),
-      child:  const Row(
+      child: const Row(
         children: [
-          Icon(Icons.opacity_rounded,size: 30),
+          Icon(Icons.opacity_rounded, size: 30),
           SizedBox(width: 20),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Drop",style: TextStyle(fontSize: 20)),
-              Text("Neu morphism",style: TextStyle(fontSize: 18),),
+              Text("Drop", style: TextStyle(fontSize: 20)),
+              Text(
+                "Neu morphism",
+                style: TextStyle(fontSize: 18),
+              ),
             ],
           )
         ],

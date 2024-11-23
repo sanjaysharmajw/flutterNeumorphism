@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_neumorphism_ui/flutter_neumorphism_ui.dart';
 
-
 class CardItems extends StatelessWidget {
   final double width;
   const CardItems({super.key, required this.width});
