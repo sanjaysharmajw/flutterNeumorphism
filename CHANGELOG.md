@@ -5,3 +5,7 @@
 ## 1.0.0
 
 * Bug fixed and update documents
+
+## 1.0.1
+
+* Document updated

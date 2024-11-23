@@ -5,61 +5,46 @@
 - ![Pub Version](https://img.shields.io/pub/v/flutter_neumorphism_ui)
 - ![Pub Likes](https://img.shields.io/pub/likes/flutter_neumorphism_ui)
 
-##### The given code is a Flutter widget implementing a neumorphic design effect. Here's a brief explanation:
+#### Flutter Neumorphism is a UI design trend that mimics real-world physical elements with soft, subtle shadows and highlights. It is needed because:
 
-**`FlutterNeumorphisms`**: A custom widget designed for neumorphism, providing a soft, embossed or debossed effect using shadows.
+#### Aesthetic Appeal: Creates a modern, sleek, and visually pleasing interface that feels tactile and engaging.
 
-**Customization**:
-- **Shadows**:
-    - `topLeftShadowColor`, `bottomRightShadowColor`: Define the colors for light and dark shadows, creating the illusion of depth.
-    - `topLeftShadowBlurRadius`, `bottomRightShadowBlurRadius`: Control the softness of shadows.
-    - `topLeftShadowSpreadRadius`, `bottomRightShadowSpreadRadius`: Define how far the shadows spread.
-    - `topLeftOffset`, `bottomRightOffset`: Specify the shadow directions.
-- **`backgroundColor`**: The background color of the widget.
-- **`borderRadius`**: The widget's rounded corner radius.
-- **`borderWidth`**: The thickness of the border around the widget.
+#### User Experience: Mimics physical surfaces, making the UI more intuitive and familiar.
 
-**Dimensions**:
-- `height` and `width`: Define the size of the neumorphic container.
+#### Customization: Offers creative control for unique and distinct app designs.
 
-4. **`onTap`**: A callback function triggered when the widget is tapped.
+#### Stand Out: Helps apps stand out by adopting trendy, futuristic design elements.
 
-5. **Child Content**:
-    - A **`Row`** layout is used, containing:
-        - An **icon** (`Icons.opacity_rounded`).
-        - A **spacer** (`SizedBox`) for spacing.
-        - A **`Column`** with two text widgets displaying "Drop" and "Neu morphism."
-
-This widget combines visual appeal with functionality by enabling a neumorphic design and supporting tap interactions.
+#### Neumorphism strikes a balance between flat and skeuomorphic design, making it an effective choice for apps aiming for minimalism with depth.
 
 ```dart
 FlutterNeumorphisms(
-      onTap: () {},
-      borderRadius: 12,
-      bottomRightShadowBlurRadius: 15,
-      bottomRightShadowSpreadRadius: 1,
-      borderWidth: 5,
-      backgroundColor: Colors.grey.shade300,
-      topLeftShadowBlurRadius: 15,
-      topLeftShadowSpreadRadius: 1,
-      topLeftShadowColor: Colors.white,
-      bottomRightShadowColor: Colors.grey.shade500,
-      height: 100,
-      width: width,
-      bottomRightOffset: const Offset(4, 4),
-      topLeftOffset: const Offset(-4, -4),
-      child:  const Row(
-        children: [
-          Icon(Icons.opacity_rounded,size: 30),
-          SizedBox(width: 20),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text("Drop",style: TextStyle(fontSize: 20)),
-              Text("Neu morphism",style: TextStyle(fontSize: 18),),
-            ],
-          )
-        ],
-      ),
-    );
+onTap: () {},
+borderRadius: 12,
+bottomRightShadowBlurRadius: 15,
+bottomRightShadowSpreadRadius: 1,
+borderWidth: 5,
+backgroundColor: Colors.grey.shade300,
+topLeftShadowBlurRadius: 15,
+topLeftShadowSpreadRadius: 1,
+topLeftShadowColor: Colors.white,
+bottomRightShadowColor: Colors.grey.shade500,
+height: 100,
+width: width,
+bottomRightOffset: const Offset(4, 4),
+topLeftOffset: const Offset(-4, -4),
+child:  const Row(
+children: [
+Icon(Icons.opacity_rounded,size: 30),
+SizedBox(width: 20),
+Column(
+crossAxisAlignment: CrossAxisAlignment.start,
+children: [
+Text("Drop",style: TextStyle(fontSize: 20)),
+Text("Neu morphism",style: TextStyle(fontSize: 18),),
+],
+)
+],
+),
+);
 ```
