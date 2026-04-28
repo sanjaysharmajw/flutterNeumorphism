@@ -10,6 +10,21 @@ A Flutter package for building beautiful **Neumorphic** (soft-UI) interfaces wit
 
 ---
 
+## Screenshots
+
+<table>
+  <tr>
+    <td align="center"><b>Smart Home</b></td>
+    <td align="center"><b>Music Player</b></td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/home_screen.png" width="280" alt="Smart Home Screen"/></td>
+    <td><img src="screenshots/music_screen.png" width="280" alt="Music Player Screen"/></td>
+  </tr>
+</table>
+
+---
+
 ## Features
 
 - **`FlutterNeumorphism`** — new simple widget, just pass a child and an optional `NeumorphismStyle`
